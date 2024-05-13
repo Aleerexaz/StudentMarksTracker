@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<FlowPane fx:id="Mainpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="422.0" prefWidth="815.0" style="-fx-background-color: transparent;" styleClass="main-pane" stylesheets="@login.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.login.Controller">
+   <children>
+      <BorderPane prefHeight="422.0" prefWidth="815.0" style="-fx-background-color: transparent; -fx-background-radius: 12px;">
+         <left>
+            <Pane fx:id="logP1" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #333333;" stylesheets="@login.css" BorderPane.alignment="CENTER">
+               <children>
+                  <PasswordField id="RegisterPassfeild" fx:id="RpassfieldC" layoutX="90.0" layoutY="207.0" prefHeight="39.0" prefWidth="236.0" promptText="Confirm Password" style="-fx-background-color: transparent; -fx-border-color: #16A180; -fx-border-width: 0px 0px 1px 0px;">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </PasswordField>
+                  <Label fx:id="LoginLable1" layoutX="92.0" layoutY="46.0" prefHeight="31.0" prefWidth="93.0" text="Sign Up" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="Rtextfeild" layoutX="90.0" layoutY="97.0" prefHeight="37.0" prefWidth="237.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: #16A180; -fx-border-width: 0px 0px 1px 0px;" styleClass="login.css" stylesheets="@login.css">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField id="RegisterPassfeild" fx:id="Rpassfield" layoutX="89.0" layoutY="152.0" prefHeight="39.0" prefWidth="236.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #16A180; -fx-border-width: 0px 0px 1px 0px;">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </PasswordField>
+                  <JFXButton fx:id="SignupB" buttonType="RAISED" layoutX="210.0" layoutY="282.0" onAction="#Registerpass" onMouseEntered="#rbColorchange" onMouseExited="#rbColorR" prefHeight="34.0" prefWidth="114.0" text="Sign up" textFill="#f7f1f1">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="108.0" layoutY="347.0" text="Already have an account?" textAlignment="CENTER" textFill="WHITE" />
+                  <JFXButton fx:id="SigninPage" layoutX="237.0" layoutY="342.0" onAction="#SigninP" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: transparent;" text="Sign In" textFill="#16a180">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <Pane fx:id="animatedPane" layoutX="-15.0" prefHeight="394.0" prefWidth="400.0" style="-fx-background-color: linear-gradient(to bottom right,  #16A180, #0E6953);" />
+               </children>
+            </Pane>
+         </left>
+         <top>
+            <Pane prefHeight="27.0" prefWidth="784.0" style="-fx-border-radius: 2px; -fx-background-color: #363636;" stylesheets="@login.css" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox fx:id="hBox" layoutX="10.0" layoutY="6.0" prefHeight="20.0" prefWidth="58.0" spacing="3.0">
+                     <children>
+                        <Circle fx:id="closeB" fill="#c73225" onMouseClicked="#close" radius="7.0" />
+                        <Circle fx:id="maxminB" fill="#ffcd19" onMouseClicked="#minandmax" radius="7.0" />
+                        <Circle fx:id="green" fill="#34c421" onMouseClicked="#iconify" radius="7.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+         </top>
+         <right>
+            <Pane fx:id="SigninPane" prefHeight="395.0" prefWidth="415.0" style="-fx-background-color: #333333;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="LoginLable" layoutX="81.0" layoutY="46.0" prefHeight="31.0" prefWidth="93.0" text="Sign In" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textfield" layoutX="78.0" layoutY="97.0" prefHeight="37.0" prefWidth="237.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: #16A180; -fx-border-width: 0px 0px 1px 0px;" styleClass="login.css" stylesheets="@login.css">
+                     <font>
+                        <Font fx:id="Mytextfeild" name="System Bold" size="16.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="passfield" layoutX="79.0" layoutY="164.0" prefHeight="39.0" prefWidth="236.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #16A180; -fx-border-width: 0px 0px 1px 0px;">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </PasswordField>
+                  <JFXButton fx:id="loginB" buttonType="RAISED" layoutX="201.0" layoutY="244.0" onAction="#loginButton" onMouseEntered="#bColorchange" onMouseExited="#bColorR" prefHeight="34.0" prefWidth="114.0" style="-fx-background-color: #16A180;" text="Login" textFill="#f7f1f1">
+
+                                                                                          <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="122.0" layoutY="320.0" text="Don't have an account?" textAlignment="CENTER" textFill="WHITE" />
+                  <JFXButton fx:id="SigninB" layoutX="243.0" layoutY="315.0" onAction="#SignupP" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: transparent;" text="Sign up" textFill="#16a180">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </right>
+      </BorderPane>
+   </children>
+</FlowPane>

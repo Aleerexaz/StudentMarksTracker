@@ -1,0 +1,21 @@
+.text-field {
+    -fx-text-fill: white; /* Change 'blue' to any color you prefer */
+}
+
+#animatedPane {
+    -fx-background-color: linear-gradient(to bottom right, #ff7e5f, #feb47b);
+
+}
+#SignupB {
+ -fx-background-color: #16A180;
+}
+#SignupB:hover{
+    -fx-background-color: #333333;
+     -fx-border-width: 1px 1px 1px 1px;
+      -fx-border-style: solid;
+         -fx-border-color:  #16A180;
+         -fx-text-fill: #16A180;
+         -fx-button-type : FLAT;
+
+
+}

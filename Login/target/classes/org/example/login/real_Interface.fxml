@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1190.0" style="-fx-background-color: #333333;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.login.Real_Interface">
+   <top>
+      <FlowPane prefHeight="30.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="27.0" prefWidth="1190.0" style="-fx-border-radius: 2px; -fx-background-color: #363636;">
+               <children>
+                  <HBox fx:id="hBox" layoutX="10.0" layoutY="6.0" prefHeight="20.0" prefWidth="58.0" spacing="3.0">
+                     <children>
+                        <Circle fx:id="closeB" fill="#c73225" onMouseClicked="#close" radius="7.0" />
+                        <Circle fx:id="maxminB" fill="#ffcd19" onMouseClicked="#minandmax" radius="7.0" />
+                        <Circle fx:id="green" fill="#34c421" onMouseClicked="#iconify" radius="7.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+         </children>
+      </FlowPane>
+   </top>
+   <left>
+      <Pane prefHeight="650.0" prefWidth="88.0" style="-fx-background-color: linear-gradient(to bottom right,  #16A180, #0E6953);" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="add" buttonType="RAISED" layoutX="4.0" layoutY="199.0" onAction="#StudentdetailsPage" prefHeight="30.0" prefWidth="78.0" style="-fx-background-color: linear-gradient(to bottom right,  #333333, #363636);" text="Add" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="5.0" layoutY="256.0" prefHeight="30.0" prefWidth="78.0" style="-fx-background-color: linear-gradient(to bottom right,  #333333, #363636);" text="Check" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="detailsPane" layoutX="225.0" layoutY="27.0" prefHeight="602.0" prefWidth="666.0" style="-fx-background-color: #333333;">
+               <children>
+                  <Label layoutX="120.0" layoutY="21.0" prefHeight="51.0" prefWidth="436.0" text="Add Student in your table" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="35.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="Student_name_textfeild" layoutX="48.0" layoutY="157.0" prefHeight="37.0" prefWidth="237.0" promptText="Name" style="-fx-background-color: transparent; -fx-border-color: #16A180; -fx-border-width: 0px 0px 1px 0px;" styleClass="login.css" stylesheets="@login.css">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="Student_class_textfeild" layoutX="330.0" layoutY="156.0" prefHeight="37.0" prefWidth="85.0" promptText="Class" style="-fx-background-color: transparent; -fx-border-color: #16A180; -fx-border-width: 0px 0px 1px 0px;" styleClass="login.css" stylesheets="@login.css">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="Course1_Smarks_Textfield" layoutX="449.0" layoutY="271.0" prefHeight="37.0" prefWidth="125.0" promptText="Sessional Marks" style="-fx-background-color: transparent; -fx-border-color: #16A180; -fx-border-width: 0px 0px 1px 0px;" styleClass="login.css" stylesheets="@login.css">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="Course1_name_textfield" layoutX="48.0" layoutY="271.0" prefHeight="37.0" prefWidth="195.0" promptText="Course 1" style="-fx-background-color: transparent; -fx-border-color: #16A180; -fx-border-width: 0px 0px 1px 0px;" styleClass="login.css" stylesheets="@login.css">
+                     <font>
+                        <Font fx:id="Mytextfeild11" name="System Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="40.0" layoutY="214.0" prefHeight="51.0" prefWidth="247.0" text="Course's Details" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="Course1_Tmarks_Textfield" layoutX="306.0" layoutY="269.0" prefHeight="39.0" prefWidth="88.0" promptText="Total Marks" style="-fx-background-color: transparent; -fx-border-color: #16A180; -fx-border-width: 0px 0px 1px 0px;" styleClass="login.css" stylesheets="@login.css">
+                     <font>
+                        <Font fx:id="Mytextfeild111" name="System Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="Student_Semester_textfeild" layoutX="466.0" layoutY="156.0" prefHeight="37.0" prefWidth="102.0" promptText="Semester" style="-fx-background-color: transparent; -fx-border-color: #16A180; -fx-border-width: 0px 0px 1px 0px;" styleClass="login.css" stylesheets="@login.css">
+                     <font>
+                        <Font fx:id="Mytextfeild12" name="System Bold" size="16.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="41.0" layoutY="98.0" prefHeight="51.0" prefWidth="247.0" text="Student's Details" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="Course2_Smarks_Textfield" layoutX="448.0" layoutY="311.0" prefHeight="37.0" prefWidth="125.0" promptText="Sessional Marks" style="-fx-background-color: transparent; -fx-border-color: #16A180; -fx-border-width: 0px 0px 1px 0px;" styleClass="login.css" stylesheets="@login.css">
+                     <font>
+                        <Font fx:id="Mytextfeild21" name="System Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="Course2_name_textfield" layoutX="47.0" layoutY="311.0" prefHeight="37.0" prefWidth="195.0" promptText="Course 2" style="-fx-background-color: transparent; -fx-border-color: #16A180; -fx-border-width: 0px 0px 1px 0px;" styleClass="login.css" stylesheets="@login.css">
+                     <font>
+                        <Font fx:id="Mytextfeild112" name="System Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="Course2_Tmarks_Textfield" layoutX="305.0" layoutY="309.0" prefHeight="39.0" prefWidth="88.0" promptText="Total Marks" style="-fx-background-color: transparent; -fx-border-color: #16A180; -fx-border-width: 0px 0px 1px 0px;" styleClass="login.css" stylesheets="@login.css">
+                     <font>
+                        <Font fx:id="Mytextfeild1111" name="System Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="Course3_Smarks_Textfield" layoutX="447.0" layoutY="351.0" prefHeight="37.0" prefWidth="125.0" promptText="Sessional Marks" style="-fx-background-color: transparent; -fx-border-color: #16A180; -fx-border-width: 0px 0px 1px 0px;" styleClass="login.css" stylesheets="@login.css">
+                     <font>
+                        <Font fx:id="Mytextfeild211" name="System Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="Course3_name_textfield" layoutX="46.0" layoutY="351.0" prefHeight="37.0" prefWidth="195.0" promptText="Course 3" style="-fx-background-color: transparent; -fx-border-color: #16A180; -fx-border-width: 0px 0px 1px 0px;" styleClass="login.css" stylesheets="@login.css">
+                     <font>
+                        <Font fx:id="Mytextfeild1121" name="System Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="Course3_Tmarks_Textfield" layoutX="304.0" layoutY="349.0" prefHeight="39.0" prefWidth="88.0" promptText="Total Marks" style="-fx-background-color: transparent; -fx-border-color: #16A180; -fx-border-width: 0px 0px 1px 0px;" styleClass="login.css" stylesheets="@login.css">
+                     <font>
+                        <Font fx:id="Mytextfeild11111" name="System Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="Course4_Smarks_Textfield" layoutX="446.0" layoutY="391.0" prefHeight="37.0" prefWidth="125.0" promptText="Sessional Marks" style="-fx-background-color: transparent; -fx-border-color: #16A180; -fx-border-width: 0px 0px 1px 0px;" styleClass="login.css" stylesheets="@login.css">
+                     <font>
+                        <Font fx:id="Mytextfeild2111" name="System Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="Course4_name_textfield" layoutX="45.0" layoutY="391.0" prefHeight="37.0" prefWidth="195.0" promptText="Course 4" style="-fx-background-color: transparent; -fx-border-color: #16A180; -fx-border-width: 0px 0px 1px 0px;" styleClass="login.css" stylesheets="@login.css">
+                     <font>
+                        <Font fx:id="Mytextfeild11211" name="System Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="Course4_Tmarks_Textfield" layoutX="303.0" layoutY="389.0" prefHeight="39.0" prefWidth="88.0" promptText="Total Marks" style="-fx-background-color: transparent; -fx-border-color: #16A180; -fx-border-width: 0px 0px 1px 0px;" styleClass="login.css" stylesheets="@login.css">
+                     <font>
+                        <Font fx:id="Mytextfeild111111" name="System Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="Course5_Smarks_Textfield" layoutX="445.0" layoutY="431.0" prefHeight="37.0" prefWidth="125.0" promptText="Sessional Marks" style="-fx-background-color: transparent; -fx-border-color: #16A180; -fx-border-width: 0px 0px 1px 0px;" styleClass="login.css" stylesheets="@login.css">
+                     <font>
+                        <Font fx:id="Mytextfeild21111" name="System Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="Course5_name_textfield" layoutX="44.0" layoutY="431.0" prefHeight="37.0" prefWidth="195.0" promptText="Course 5" style="-fx-background-color: transparent; -fx-border-color: #16A180; -fx-border-width: 0px 0px 1px 0px;" styleClass="login.css" stylesheets="@login.css">
+                     <font>
+                        <Font fx:id="Mytextfeild112111" name="System Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="Course5_Tmarks_Textfield" layoutX="302.0" layoutY="429.0" prefHeight="39.0" prefWidth="88.0" promptText="Total Marks" style="-fx-background-color: transparent; -fx-border-color: #16A180; -fx-border-width: 0px 0px 1px 0px;" styleClass="login.css" stylesheets="@login.css">
+                     <font>
+                        <Font fx:id="Mytextfeild1111111" name="System Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="Course6_Smarks_Textfield" layoutX="446.0" layoutY="471.0" prefHeight="37.0" prefWidth="125.0" promptText="Sessional Marks" style="-fx-background-color: transparent; -fx-border-color: #16A180; -fx-border-width: 0px 0px 1px 0px;" styleClass="login.css" stylesheets="@login.css">
+                     <font>
+                        <Font fx:id="Mytextfeild211111" name="System Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="Course6_name_textfield" layoutX="45.0" layoutY="471.0" prefHeight="37.0" prefWidth="195.0" promptText="Course 6" style="-fx-background-color: transparent; -fx-border-color: #16A180; -fx-border-width: 0px 0px 1px 0px;" styleClass="login.css" stylesheets="@login.css">
+                     <font>
+                        <Font fx:id="Mytextfeild1121111" name="System Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="Course6_Tmarks_Textfield" layoutX="303.0" layoutY="469.0" prefHeight="39.0" prefWidth="88.0" promptText="Total Marks" style="-fx-background-color: transparent; -fx-border-color: #16A180; -fx-border-width: 0px 0px 1px 0px;" styleClass="login.css" stylesheets="@login.css">
+                     <font>
+                        <Font fx:id="Mytextfeild11111111" name="System Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="Course7_Smarks_Textfield" layoutX="445.0" layoutY="511.0" prefHeight="37.0" prefWidth="125.0" promptText="Sessional Marks" style="-fx-background-color: transparent; -fx-border-color: #16A180; -fx-border-width: 0px 0px 1px 0px;" styleClass="login.css" stylesheets="@login.css">
+                     <font>
+                        <Font fx:id="Mytextfeild2111111" name="System Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="Course7_name_textfield" layoutX="44.0" layoutY="511.0" prefHeight="37.0" prefWidth="195.0" promptText="Course 7" style="-fx-background-color: transparent; -fx-border-color: #16A180; -fx-border-width: 0px 0px 1px 0px;" styleClass="login.css" stylesheets="@login.css">
+                     <font>
+                        <Font fx:id="Mytextfeild11211111" name="System Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="Course7_Tmarks_Textfield" layoutX="302.0" layoutY="509.0" prefHeight="39.0" prefWidth="88.0" promptText="Total Marks" style="-fx-background-color: transparent; -fx-border-color: #16A180; -fx-border-width: 0px 0px 1px 0px;" styleClass="login.css" stylesheets="@login.css">
+                     <font>
+                        <Font fx:id="Mytextfeild111111111" name="System Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="Course8_Smarks_Textfield" layoutX="445.0" layoutY="551.0" prefHeight="37.0" prefWidth="125.0" promptText="Sessional Marks" style="-fx-background-color: transparent; -fx-border-color: #16A180; -fx-border-width: 0px 0px 1px 0px;" styleClass="login.css" stylesheets="@login.css">
+                     <font>
+                        <Font fx:id="Mytextfeild21111111" name="System Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="Course8_name_textfield" layoutX="44.0" layoutY="551.0" prefHeight="37.0" prefWidth="195.0" promptText="Course 8" style="-fx-background-color: transparent; -fx-border-color: #16A180; -fx-border-width: 0px 0px 1px 0px;" styleClass="login.css" stylesheets="@login.css">
+                     <font>
+                        <Font fx:id="Mytextfeild112111111" name="System Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="Course8_Tmarks_Textfield" layoutX="302.0" layoutY="549.0" prefHeight="39.0" prefWidth="88.0" promptText="Total Marks" style="-fx-background-color: transparent; -fx-border-color: #16A180; -fx-border-width: 0px 0px 1px 0px;" styleClass="login.css" stylesheets="@login.css">
+                     <font>
+                        <Font fx:id="Mytextfeild1111111111" name="System Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <Pane fx:id="AddremovePane" layoutX="20.0" layoutY="311.0" prefHeight="287.0" prefWidth="566.0" style="-fx-background-color: #333333;" />
+                  <Pane fx:id="Welcome" layoutX="11.0" layoutY="1.0" prefHeight="599.0" prefWidth="651.0" style="-fx-background-color: #333333;">
+                     <children>
+                        <Label fx:id="welcomeL" layoutX="197.0" layoutY="218.0" prefHeight="73.0" prefWidth="240.0" text="Welcome!" textFill="WHITE">
+                           <font>
+                              <Font size="53.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <JFXButton fx:id="AddCourse" buttonType="RAISED" layoutX="918.0" layoutY="237.0" onAction="#addCourse" prefHeight="30.0" prefWidth="115.0" style="-fx-background-color: #16A180;" text="Add Course" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="RemoveCourse" buttonType="RAISED" layoutX="903.0" layoutY="284.0" onAction="#removeCourse" prefHeight="30.0" prefWidth="145.0" style="-fx-background-color: #9E0003;" text="Remove Course" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="Submit_Studentdetails" buttonType="RAISED" layoutX="919.0" layoutY="581.0" onAction="#submitStudentinTable" prefHeight="30.0" prefWidth="115.0" style="-fx-background-color: #16A180;" text="Submit" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <Pane fx:id="sendthisback" layoutX="877.0" layoutY="152.0" prefHeight="484.0" prefWidth="200.0" style="-fx-background-color: #333333;" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

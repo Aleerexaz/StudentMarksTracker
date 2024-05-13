@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.login.Dialogue">
+   <center>
+      <AnchorPane prefHeight="193.0" prefWidth="361.0" style="-fx-background-color: #333333;">
+         <children>
+            <Pane layoutX="-1.0" prefHeight="238.0" prefWidth="446.0" style="-fx-background-color: #333333;">
+               <children>
+                  <Pane prefHeight="27.0" prefWidth="447.0" style="-fx-border-radius: 2px; -fx-background-color: #363636;">
+                     <children>
+                        <HBox fx:id="hBox" layoutX="10.0" layoutY="6.0" prefHeight="20.0" prefWidth="58.0" spacing="3.0">
+                           <children>
+                              <Circle fx:id="closeB" fill="#c73225" onMouseClicked="#close" radius="7.0" />
+                              <Circle fx:id="maxminB" fill="#ffcd19" onMouseClicked="#minandmax" radius="7.0" />
+                              <Circle fx:id="green" fill="#34c421" onMouseClicked="#iconify" radius="7.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </Pane>
+                  <Label fx:id="dialogueL" alignment="CENTER" layoutX="34.0" layoutY="35.0" prefHeight="101.0" prefWidth="388.0" text="Login Successfull" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="dialogueOK" buttonType="RAISED" layoutX="236.0" layoutY="159.0" onAction="#close" prefHeight="27.0" prefWidth="70.0" style="-fx-background-color: #A1A1A1;" text="OK" textFill="#333333">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="dialogueCancel" buttonType="RAISED" layoutX="140.0" layoutY="159.0" onAction="#cancel" prefHeight="27.0" prefWidth="70.0" style="-fx-background-color: #A1A1A1;" text="Cancel" textFill="#333333">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
